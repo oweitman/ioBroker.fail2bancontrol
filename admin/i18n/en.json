@@ -1,0 +1,12 @@
+{
+    "address": "Address",
+    "address_help": "Base URL of the fail2ban-control API, e.g. http://127.0.0.1:9191",
+    "refreshOverview": "Refresh Overview (seconds)",
+    "refreshOverview_help": "Polling interval for server overview data",
+    "refreshJails": "Refresh Jails (seconds)",
+    "refreshJails_help": "Polling interval for jail data",
+    "refreshBanned": "Refresh Banned (seconds)",
+    "refreshBanned_help": "Polling interval for banned IP information",
+    "requestTimeout": "Request Timeout (milliseconds)",
+    "requestTimeout_help": "Timeout for API requests to fail2ban-control"
+}

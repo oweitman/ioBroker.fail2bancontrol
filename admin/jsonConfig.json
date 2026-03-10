@@ -1,0 +1,73 @@
+{
+    "i18n": true,
+    "type": "panel",
+    "items": {
+        "address": {
+            "type": "text",
+            "label": "address",
+            "help": "address_help",
+            "newLine": true,
+            "xs": 12,
+            "sm": 12,
+            "md": 8,
+            "lg": 6,
+            "xl": 6
+        },
+        "refreshOverview": {
+            "type": "number",
+            "label": "refreshOverview",
+            "help": "refreshOverview_help",
+            "newLine": true,
+            "min": 5,
+            "max": 86400,
+            "default": 30,
+            "xs": 12,
+            "sm": 6,
+            "md": 4,
+            "lg": 3,
+            "xl": 3
+        },
+        "refreshJails": {
+            "type": "number",
+            "label": "refreshJails",
+            "help": "refreshJails_help",
+            "newLine": true,
+            "min": 5,
+            "max": 86400,
+            "default": 60,
+            "xs": 12,
+            "sm": 6,
+            "md": 4,
+            "lg": 3,
+            "xl": 3
+        },
+        "refreshBanned": {
+            "type": "number",
+            "label": "refreshBanned",
+            "help": "refreshBanned_help",
+            "newLine": true,
+            "min": 5,
+            "max": 86400,
+            "default": 60,
+            "xs": 12,
+            "sm": 6,
+            "md": 4,
+            "lg": 3,
+            "xl": 3
+        },
+        "requestTimeout": {
+            "type": "number",
+            "label": "requestTimeout",
+            "help": "requestTimeout_help",
+            "newLine": true,
+            "min": 1000,
+            "max": 60000,
+            "default": 10000,
+            "xs": 12,
+            "sm": 6,
+            "md": 4,
+            "lg": 3,
+            "xl": 3
+        }
+    }
+}
