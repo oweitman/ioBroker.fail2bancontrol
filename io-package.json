@@ -1,33 +1,20 @@
 {
   "common": {
     "name": "fail2bancontrol",
-    "version": "0.4.1",
+    "version": "0.4.2",
     "news": {
-      "0.4.1": {
-        "en": "enable deployment",
-        "de": "die bereitstellung",
-        "ru": "возможность развертывания",
-        "pt": "activar a implantação",
-        "nl": "implementatie mogelijk maken",
-        "fr": "permettre le déploiement",
-        "it": "abilitare la distribuzione",
-        "es": "permitir el despliegue",
-        "pl": "umożliwić wdrożenie",
-        "uk": "увімкнути розгортання",
-        "zh-cn": "允许部署"
-      },
-      "0.4.0": {
-        "en": "test trusted connection of npm",
-        "de": "test vertrauenswürdige verbindung von npm",
-        "ru": "тестирование доверенного соединения npm",
-        "pt": "testar a conexão confiável do npm",
-        "nl": "test vertrouwde verbinding van npm",
-        "fr": "test de connexion fiable de npm",
-        "it": "prova connessione fidata di npm",
-        "es": "prueba de conexión confiable de npm",
-        "pl": "test zaufanego połączenia npm",
-        "uk": "тест довірене з'єднання npm",
-        "zh-cn": "测试信任的 npm 连接"
+      "0.4.2": {
+        "en": "enable deployment\ntest trusted connection of npm",
+        "de": "die bereitstellung\ntest vertrauenswürdige verbindung von npm",
+        "ru": "возможность развертывания\nтестирование доверенного соединения npm",
+        "pt": "activar a implantação\ntestar a conexão confiável do npm",
+        "nl": "implementatie mogelijk maken\ntest vertrouwde verbinding van npm",
+        "fr": "permettre le déploiement\ntest de connexion fiable de npm",
+        "it": "abilitare la distribuzione\nprova connessione fidata di npm",
+        "es": "permitir el despliegue\nprueba de conexión confiable de npm",
+        "pl": "umożliwić wdrożenie\ntest zaufanego połączenia npm",
+        "uk": "увімкнути розгортання\nтест довірене з'єднання npm",
+        "zh-cn": "允许部署\n测试信任的 npm 连接"
       },
       "0.3.0": {
         "en": "initial adapter implementation\npolling architecture\ndynamic jail detection\njail parameter control\nfix error if server is wrong",
