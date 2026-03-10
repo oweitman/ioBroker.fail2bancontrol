@@ -1,109 +1,129 @@
 {
-    "common": {
-        "name": "fail2bancontrol",
-        "version": "0.0.1",
-        "news": {
-            "0.0.1": {
-                "en": "initial release",
-                "de": "Erstveröffentlichung",
-                "ru": "Начальная версия",
-                "pt": "lançamento inicial",
-                "nl": "Eerste uitgave",
-                "fr": "Première version",
-                "it": "Versione iniziale",
-                "es": "Versión inicial",
-                "pl": "Pierwsze wydanie",
-                "uk": "Початкова версія",
-                "zh-cn": "首次出版"
-            }
-        },
-        "titleLang": {
-            "en": "fail2ban control",
-            "de": "fail2ban-Steuerung",
-            "ru": "контроль фейл2бана",
-            "pt": "controle fail2ban",
-            "nl": "fail2ban-controle",
-            "fr": "contrôle fail2ban",
-            "it": "controllo fail2ban",
-            "es": "control de fail2ban",
-            "pl": "Kontrola Fail2ban",
-            "uk": "контроль fail2ban",
-            "zh-cn": "故障2禁止控制"
-        },
-        "desc": {
-            "en": "fail2bancontrol",
-            "de": "fail2bancontrol",
-            "ru": "фейл2банконтроль",
-            "pt": "fail2bancontrol",
-            "nl": "fail2bancontrole",
-            "fr": "échec2bancontrol",
-            "it": "fail2bancontrol",
-            "es": "controlfail2ban",
-            "pl": "kontrola awarii2banowania",
-            "uk": "fail2bancontrol",
-            "zh-cn": "失败2禁止控制"
-        },
-        "authors": ["oweitman <oweitman@gmx.de>"],
-        "keywords": ["template", "automation", "IoT", "integration"],
-        "licenseInformation": {
-            "type": "free",
-            "license": "MIT"
-        },
-        "platform": "Javascript/Node.js",
-        "icon": "fail2bancontrol.png",
-        "enabled": true,
-        "extIcon": "https://raw.githubusercontent.com/oweitman/ioBroker.fail2bancontrol/main/admin/fail2bancontrol.png",
-        "readme": "https://github.com/oweitman/ioBroker.fail2bancontrol/blob/main/README.md",
-        "loglevel": "info",
-        "tier": 3,
-        "mode": "daemon",
-        "type": "utility",
-        "compact": true,
-        "connectionType": "local",
-        "dataSource": "poll",
-        "adminUI": {
-            "config": "json"
-        },
-        "dependencies": [
-            {
-                "js-controller": ">=6.0.11"
-            }
-        ],
-        "globalDependencies": [
-            {
-                "admin": ">=7.0.23"
-            }
-        ]
+  "common": {
+    "name": "fail2bancontrol",
+    "version": "0.1.0",
+    "news": {
+      "0.1.0": {
+        "en": "initial release",
+        "de": "erstausstrahlung",
+        "ru": "первоначальное освобождение",
+        "pt": "libertação inicial",
+        "nl": "eerste release",
+        "fr": "libération initiale",
+        "it": "rilascio iniziale",
+        "es": "liberación inicial",
+        "pl": "początkowe zwolnienie",
+        "uk": "початковий реліз",
+        "zh-cn": "初步释放"
+      },
+      "0.0.1": {
+        "en": "initial release",
+        "de": "Erstveröffentlichung",
+        "ru": "Начальная версия",
+        "pt": "lançamento inicial",
+        "nl": "Eerste uitgave",
+        "fr": "Première version",
+        "it": "Versione iniziale",
+        "es": "Versión inicial",
+        "pl": "Pierwsze wydanie",
+        "uk": "Початкова версія",
+        "zh-cn": "首次出版"
+      }
     },
-    "native": {
-        "address": "http://127.0.0.1:9191",
-        "refreshOverview": 30,
-        "refreshJails": 60,
-        "refreshBanned": 60,
-        "requestTimeout": 10000
+    "titleLang": {
+      "en": "fail2ban control",
+      "de": "fail2ban-Steuerung",
+      "ru": "контроль фейл2бана",
+      "pt": "controle fail2ban",
+      "nl": "fail2ban-controle",
+      "fr": "contrôle fail2ban",
+      "it": "controllo fail2ban",
+      "es": "control de fail2ban",
+      "pl": "Kontrola Fail2ban",
+      "uk": "контроль fail2ban",
+      "zh-cn": "故障2禁止控制"
     },
-    "objects": [],
-    "instanceObjects": [
-        {
-            "_id": "info",
-            "type": "channel",
-            "common": {
-                "name": "Information"
-            },
-            "native": {}
-        },
-        {
-            "_id": "info.connection",
-            "type": "state",
-            "common": {
-                "role": "indicator.connected",
-                "name": "Device or service connected",
-                "type": "boolean",
-                "read": true,
-                "write": false,
-                "def": false
-            },
-            "native": {}
-        }
+    "desc": {
+      "en": "fail2bancontrol",
+      "de": "fail2bancontrol",
+      "ru": "фейл2банконтроль",
+      "pt": "fail2bancontrol",
+      "nl": "fail2bancontrole",
+      "fr": "échec2bancontrol",
+      "it": "fail2bancontrol",
+      "es": "controlfail2ban",
+      "pl": "kontrola awarii2banowania",
+      "uk": "fail2bancontrol",
+      "zh-cn": "失败2禁止控制"
+    },
+    "authors": [
+      "oweitman <oweitman@gmx.de>"
+    ],
+    "keywords": [
+      "template",
+      "automation",
+      "IoT",
+      "integration"
+    ],
+    "licenseInformation": {
+      "type": "free",
+      "license": "MIT"
+    },
+    "platform": "Javascript/Node.js",
+    "icon": "fail2bancontrol.png",
+    "enabled": true,
+    "extIcon": "https://raw.githubusercontent.com/oweitman/ioBroker.fail2bancontrol/main/admin/fail2bancontrol.png",
+    "readme": "https://github.com/oweitman/ioBroker.fail2bancontrol/blob/main/README.md",
+    "loglevel": "info",
+    "tier": 3,
+    "mode": "daemon",
+    "type": "utility",
+    "compact": true,
+    "connectionType": "local",
+    "dataSource": "poll",
+    "adminUI": {
+      "config": "json"
+    },
+    "dependencies": [
+      {
+        "js-controller": ">=6.0.11"
+      }
+    ],
+    "globalDependencies": [
+      {
+        "admin": ">=7.0.23"
+      }
     ]
+  },
+  "native": {
+    "address": "http://127.0.0.1:9191",
+    "refreshOverview": 30,
+    "refreshJails": 60,
+    "refreshBanned": 60,
+    "requestTimeout": 10000
+  },
+  "objects": [],
+  "instanceObjects": [
+    {
+      "_id": "info",
+      "type": "channel",
+      "common": {
+        "name": "Information"
+      },
+      "native": {}
+    },
+    {
+      "_id": "info.connection",
+      "type": "state",
+      "common": {
+        "role": "indicator.connected",
+        "name": "Device or service connected",
+        "type": "boolean",
+        "read": true,
+        "write": false,
+        "def": false
+      },
+      "native": {}
+    }
+  ]
 }
