@@ -1,6 +1,6 @@
 {
   "name": "iobroker.fail2bancontrol",
-  "version": "0.2.0",
+  "version": "0.3.0",
   "description": "fail2bancontrol",
   "author": {
     "name": "oweitman",
@@ -56,7 +56,7 @@
     "check": "tsc --noEmit -p tsconfig.check.json",
     "lint": "eslint -c eslint.config.mjs .",
     "translate": "translate-adapter",
-    "release": "release-script",
+    "release": "release-script --all",
     "npm:": "npm install"
   },
   "bugs": {

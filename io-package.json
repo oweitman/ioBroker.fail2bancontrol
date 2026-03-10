@@ -1,9 +1,9 @@
 {
   "common": {
     "name": "fail2bancontrol",
-    "version": "0.2.0",
+    "version": "0.3.0",
     "news": {
-      "0.2.0": {
+      "0.3.0": {
         "en": "initial adapter implementation\npolling architecture\ndynamic jail detection\njail parameter control\nfix error if server is wrong",
         "de": "erstausführung des adapters\narchitektur\ndynamische fehlererkennung\njava-parametersteuerung\nfehler beheben, wenn server falsch ist",
         "ru": "начальная адаптерная реализация\nархитектура опросов\nдинамическое обнаружение тюрьмы\nтюремный контроль параметров\nошибка исправления, если сервер ошибается",
