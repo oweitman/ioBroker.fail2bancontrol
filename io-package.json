@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "fail2bancontrol",
-    "version": "0.3.0",
+    "version": "0.4.0",
     "news": {
+      "0.4.0": {
+        "en": "test trusted connection of npm",
+        "de": "test vertrauenswürdige verbindung von npm",
+        "ru": "тестирование доверенного соединения npm",
+        "pt": "testar a conexão confiável do npm",
+        "nl": "test vertrouwde verbinding van npm",
+        "fr": "test de connexion fiable de npm",
+        "it": "prova connessione fidata di npm",
+        "es": "prueba de conexión confiable de npm",
+        "pl": "test zaufanego połączenia npm",
+        "uk": "тест довірене з'єднання npm",
+        "zh-cn": "测试信任的 npm 连接"
+      },
       "0.3.0": {
         "en": "initial adapter implementation\npolling architecture\ndynamic jail detection\njail parameter control\nfix error if server is wrong",
         "de": "erstausführung des adapters\narchitektur\ndynamische fehlererkennung\njava-parametersteuerung\nfehler beheben, wenn server falsch ist",

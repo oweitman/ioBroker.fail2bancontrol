@@ -124,6 +124,10 @@ Please refer to the [`dev-server` documentation](https://github.com/ioBroker/dev
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+### 0.4.0 (2026-03-10)
+
+- test trusted connection of npm
+
 ### 0.3.0 (2026-03-10)
 
 - initial adapter implementation
