@@ -1,8 +1,21 @@
 {
   "common": {
     "name": "fail2bancontrol",
-    "version": "0.4.0",
+    "version": "0.4.1",
     "news": {
+      "0.4.1": {
+        "en": "enable deployment",
+        "de": "die bereitstellung",
+        "ru": "возможность развертывания",
+        "pt": "activar a implantação",
+        "nl": "implementatie mogelijk maken",
+        "fr": "permettre le déploiement",
+        "it": "abilitare la distribuzione",
+        "es": "permitir el despliegue",
+        "pl": "umożliwić wdrożenie",
+        "uk": "увімкнути розгортання",
+        "zh-cn": "允许部署"
+      },
       "0.4.0": {
         "en": "test trusted connection of npm",
         "de": "test vertrauenswürdige verbindung von npm",
