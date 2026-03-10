@@ -1,6 +1,6 @@
-![Logo](admin/fail2bancontrol.png)
-
 # ioBroker.fail2bancontrol
+
+![Logo](admin/fail2bancontrol.png)
 
 [![NPM version](https://img.shields.io/npm/v/iobroker.fail2bancontrol.svg)](https://www.npmjs.com/package/iobroker.fail2bancontrol)
 [![Downloads](https://img.shields.io/npm/dm/iobroker.fail2bancontrol.svg)](https://www.npmjs.com/package/iobroker.fail2bancontrol)
@@ -13,110 +13,213 @@
 
 ## fail2bancontrol adapter for ioBroker
 
-Describe your project here
+Control and monitor a **fail2ban server** via the **fail2ban-control API**.
 
-## Developer manual
+The adapter allows you to:
 
-This section is intended for the developer. It can be deleted later.
+- monitor fail2ban server status
+- display and monitor all configured jails
+- view banned IP addresses
+- change jail parameters
+- execute server actions
 
-### DISCLAIMER
+The adapter polls the fail2ban-control API at configurable intervals.
 
-Please make sure that you consider copyrights and trademarks when you use names or logos of a company and add a disclaimer to your README.
-You can check other adapters for examples or ask in the developer community. Using a name or logo of a company without permission may cause legal problems for you.
+Help, hints and pull requests are welcome.
 
-### Getting started
+## Requirements
 
-You are almost done, only a few steps left:
+The adapter requires a running **fail2ban-control API server**.
 
-1. Create a new repository on GitHub with the name `ioBroker.fail2bancontrol`
-1. Initialize the current folder as a new git repository:
-    ```bash
-    git init -b main
-    git add .
-    git commit -m "Initial commit"
-    ```
-1. Link your local repository with the one on GitHub:
+Example:
 
-    ```bash
-    git remote add origin https://github.com/oweitman/ioBroker.fail2bancontrol
-    ```
-
-1. Push all files to the GitHub repo:
-    ```bash
-    git push origin main
-    ```
-1. Add a new secret under https://github.com/oweitman/ioBroker.fail2bancontrol/settings/secrets. It must be named `AUTO_MERGE_TOKEN` and contain a personal access token with push access to the repository, e.g. yours. You can create a new token under https://github.com/settings/tokens.
-
-1. Head over to [main.js](main.js) and start programming!
-
-### Best Practices
-
-We've collected some [best practices](https://github.com/ioBroker/ioBroker.repositories#development-and-coding-best-practices) regarding ioBroker development and coding in general. If you're new to ioBroker or Node.js, you should
-check them out. If you're already experienced, you should also take a look at them - you might learn something new :)
-
-### State Roles
-
-When creating state objects, it is important to use the correct role for the state. The role defines how the state should be interpreted by visualizations and other adapters. For a list of available roles and their meanings, please refer to the [state roles documentation](https://www.iobroker.net/#en/documentation/dev/stateroles.md).
-
-**Important:** Do not invent your own custom role names. If you need a role that is not part of the official list, please contact the ioBroker developer community for guidance and discussion about adding new roles.
-
-### Scripts in `package.json`
-
-Several npm scripts are predefined for your convenience. You can run them using `npm run <scriptname>`
-| Script name | Description |
-|-------------|-------------|
-| `test:js` | Executes the tests you defined in `*.test.js` files. |
-| `test:package` | Ensures your `package.json` and `io-package.json` are valid. |
-| `test:integration` | Tests the adapter startup with an actual instance of ioBroker. |
-| `test` | Performs a minimal test run on package files and your tests. |
-| `check` | Performs a type-check on your code (without compiling anything). |
-| `lint` | Runs `ESLint` to check your code for formatting errors and potential bugs. |
-| `translate` | Translates texts in your adapter to all required languages, see [`@iobroker/adapter-dev`](https://github.com/ioBroker/adapter-dev#manage-translations) for more details. |
-| `release` | Creates a new release, see [`@alcalzone/release-script`](https://github.com/AlCalzone/release-script#usage) for more details. |
-
-### Writing tests
-
-When done right, testing code is invaluable, because it gives you the
-confidence to change your code while knowing exactly if and when
-something breaks. A good read on the topic of test-driven development
-is https://hackernoon.com/introduction-to-test-driven-development-tdd-61a13bc92d92.
-Although writing tests before the code might seem strange at first, but it has very
-clear upsides.
-
-The template provides you with basic tests for the adapter startup and package files.
-It is recommended that you add your own tests into the mix.
-
-### Publishing the adapter
-
-Using GitHub Actions, you can enable automatic releases on npm whenever you push a new git tag that matches the form
-`v<major>.<minor>.<patch>`. We **strongly recommend** that you do. The necessary steps are described in `.github/workflows/test-and-release.yml`.
-
-Since you installed the release script, you can create a new
-release simply by calling:
-
-```bash
-npm run release
+```text
+http://<server>:9191
 ```
 
-Additional command line options for the release script are explained in the
-[release-script documentation](https://github.com/AlCalzone/release-script#command-line).
+The adapter communicates with the API via HTTP.
 
-To get your adapter released in ioBroker, please refer to the documentation
-of [ioBroker.repositories](https://github.com/ioBroker/ioBroker.repositories#requirements-for-adapter-to-get-added-to-the-latest-repository).
+Details about installation and APIs see
+<https://github.com/oweitman/fail2bancontrol>
 
-### Test the adapter manually with dev-server
+## Steps
 
-Since you set up `dev-server`, you can use it to run, test and debug your adapter.
+1. Install the adapter
 
-You may start `dev-server` by calling from your dev directory:
+2. Configure the adapter in the admin interface
 
-```bash
-dev-server watch
+Required parameters:
+
+| Parameter       | Description                          |
+| --------------- | ------------------------------------ |
+| address         | URL of the fail2ban-control API      |
+| refreshOverview | refresh interval for server overview |
+| refreshJails    | refresh interval for jail status     |
+| refreshBanned   | refresh interval for banned IPs      |
+| requestTimeout  | timeout for API requests             |
+
+## Functions
+
+## Server Information
+
+The adapter provides several datapoints under
+
+```text
+fail2bancontrol.0.Server
 ```
 
-The ioBroker.admin interface will then be available at http://localhost:undefined/
+Examples:
 
-Please refer to the [`dev-server` documentation](https://github.com/ioBroker/dev-server#command-line) for more details.
+```text
+Overview
+Version
+Loglevel
+DbFile
+DbMaxmatches
+DbPurgeage
+JailsJson
+Banned
+```
+
+These datapoints reflect the information retrieved from the API.
+
+## Server Actions
+
+The following server actions can be triggered:
+
+```text
+Server.Restart
+Server.Reload
+Server.Stop
+Server.UnbanAll
+```
+
+Setting the datapoint to **true** executes the action.
+
+## Jail Monitoring
+
+All jails are detected automatically.
+
+Structure:
+
+```text
+fail2bancontrol.0.Jails.<jailname>
+```
+
+Example datapoints:
+
+```text
+CurrentlyFailed
+TotalFailed
+CurrentlyBanned
+TotalBanned
+BannedIPList
+FileList
+```
+
+## Jail Configuration
+
+Several jail parameters can be modified via datapoints.
+
+Example:
+
+```text
+Maxretry
+Findtime
+Bantime
+Maxmatches
+Maxlines
+```
+
+Changing these datapoints sends a configuration update to the API.
+
+## Jail Actions
+
+Each jail supports the following commands:
+
+```text
+Restart
+Reload
+```
+
+## sendTo Function
+
+The adapter supports a generic **sendTo API function**.
+
+This allows direct API interaction from scripts.
+
+### Example
+
+```javascript
+sendTo(
+    'fail2bancontrol.0',
+    'api',
+    {
+        method: 'GET',
+        endpoint: '/api/jails',
+    },
+    function (data) {
+        console.log(data);
+    },
+);
+```
+
+Example with parameters:
+
+```javascript
+sendTo(
+    'fail2bancontrol.0',
+    'api',
+    {
+        method: 'POST',
+        endpoint: '/api/jail/sshd/restart',
+    },
+    function (data) {
+        console.log(data);
+    },
+);
+```
+
+## Troubleshooting
+
+### Adapter does not connect
+
+Check:
+
+- API address
+- API server running
+- firewall rules
+
+Test API manually:
+
+```text
+http://<server>:9191/api/overview
+```
+
+### No jails detected
+
+Possible reasons:
+
+- fail2ban-control API not configured correctly
+- fail2ban not running
+- API endpoint `/api/jails` returns empty list
+
+## Todo Existing Functions
+
+- improve error handling
+- connection test button
+- additional server statistics
+
+## Todo New Functions
+
+- event based updates
+- additional visualization templates
+- extended jail statistics
+
+## Not Implemented / Planned Functions
+
+- direct SSH access to fail2ban
+- automatic jail creation
 
 ## Changelog
 
@@ -124,6 +227,11 @@ Please refer to the [`dev-server` documentation](https://github.com/ioBroker/dev
     Placeholder for the next version (at the beginning of the line):
     ### **WORK IN PROGRESS**
 -->
+
+### **WORK IN PROGRESS**
+
+- update readme
+
 ### 0.4.2 (2026-03-10)
 
 - enable deployment
