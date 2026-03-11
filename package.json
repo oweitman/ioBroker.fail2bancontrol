@@ -57,7 +57,8 @@
     "lint": "eslint -c eslint.config.mjs .",
     "translate": "translate-adapter",
     "release": "release-script --all",
-    "npm:": "npm install"
+    "npm:": "npm install",
+    "repochecker": "npx @iobroker/repochecker https://github.com/oweitman/ioBroker.fail2bancontrol --local"
   },
   "bugs": {
     "url": "https://github.com/oweitman/ioBroker.fail2bancontrol/issues"

@@ -1,129 +1,122 @@
 {
-  "common": {
-    "name": "fail2bancontrol",
-    "version": "0.4.2",
-    "news": {
-      "0.4.2": {
-        "en": "enable deployment\ntest trusted connection of npm",
-        "de": "die bereitstellung\ntest vertrauenswürdige verbindung von npm",
-        "ru": "возможность развертывания\nтестирование доверенного соединения npm",
-        "pt": "activar a implantação\ntestar a conexão confiável do npm",
-        "nl": "implementatie mogelijk maken\ntest vertrouwde verbinding van npm",
-        "fr": "permettre le déploiement\ntest de connexion fiable de npm",
-        "it": "abilitare la distribuzione\nprova connessione fidata di npm",
-        "es": "permitir el despliegue\nprueba de conexión confiable de npm",
-        "pl": "umożliwić wdrożenie\ntest zaufanego połączenia npm",
-        "uk": "увімкнути розгортання\nтест довірене з'єднання npm",
-        "zh-cn": "允许部署\n测试信任的 npm 连接"
-      },
-      "0.3.0": {
-        "en": "initial adapter implementation\npolling architecture\ndynamic jail detection\njail parameter control\nfix error if server is wrong",
-        "de": "erstausführung des adapters\narchitektur\ndynamische fehlererkennung\njava-parametersteuerung\nfehler beheben, wenn server falsch ist",
-        "ru": "начальная адаптерная реализация\nархитектура опросов\nдинамическое обнаружение тюрьмы\nтюремный контроль параметров\nошибка исправления, если сервер ошибается",
-        "pt": "implementação inicial do adaptador\narquitetura de votação\ndetecção dinâmica da cadeia\ncontrole de parâmetros de cadeia\ncorrigir erro se o servidor estiver errado",
-        "nl": "eerste adapter implementatie\nenquête architectuur\ndynamische jail detectie\njail parameter controle\nfout herstellen als de server fout is",
-        "fr": "mise en œuvre initiale de l'adaptateur\narchitecture des sondages\ndétection dynamique des prisons\ncontrôle des paramètres de prison\ncorrection de l'erreur si le serveur se trompe",
-        "it": "iniziale implementazione dell'adattatore\narchitettura inquinante\nrilevamento dinamico della prigione\ncontrollo dei parametri\nerrore di correzione se il server è sbagliato",
-        "es": "aplicación inicial del adaptador\npolinización de arquitectura\ndetección dinámica de la cárcel\ncontrol del parámetro carcelario\ncorregir error si el servidor está equivocado",
-        "pl": "wstępna implementacja adaptera\narchitektura sondażowa\ndynamiczna detekcja więzienia\nkontrola parametrów więzienia\nnaprawić błąd, jeśli serwer się myli",
-        "uk": "впровадження початкових адаптерів\nархітектура опитування\nдинамічне виявлення в’язнів\nконтроль параметрів в'язниці\nвиправлено помилку, якщо сервер неправильно",
-        "zh-cn": "初始适配器执行\n投票结构\n动态监狱检测\n监狱参数控制\n如果服务器错误, 则修正错误"
-      }
+    "common": {
+        "name": "fail2bancontrol",
+        "version": "0.4.2",
+        "news": {
+            "0.4.2": {
+                "en": "enable deployment\ntest trusted connection of npm",
+                "de": "die bereitstellung\ntest vertrauenswürdige verbindung von npm",
+                "ru": "возможность развертывания\nтестирование доверенного соединения npm",
+                "pt": "activar a implantação\ntestar a conexão confiável do npm",
+                "nl": "implementatie mogelijk maken\ntest vertrouwde verbinding van npm",
+                "fr": "permettre le déploiement\ntest de connexion fiable de npm",
+                "it": "abilitare la distribuzione\nprova connessione fidata di npm",
+                "es": "permitir el despliegue\nprueba de conexión confiable de npm",
+                "pl": "umożliwić wdrożenie\ntest zaufanego połączenia npm",
+                "uk": "увімкнути розгортання\nтест довірене з'єднання npm",
+                "zh-cn": "允许部署\n测试信任的 npm 连接"
+            },
+            "0.3.0": {
+                "en": "initial adapter implementation\npolling architecture\ndynamic jail detection\njail parameter control\nfix error if server is wrong",
+                "de": "erstausführung des adapters\narchitektur\ndynamische fehlererkennung\njava-parametersteuerung\nfehler beheben, wenn server falsch ist",
+                "ru": "начальная адаптерная реализация\nархитектура опросов\nдинамическое обнаружение тюрьмы\nтюремный контроль параметров\nошибка исправления, если сервер ошибается",
+                "pt": "implementação inicial do adaptador\narquitetura de votação\ndetecção dinâmica da cadeia\ncontrole de parâmetros de cadeia\ncorrigir erro se o servidor estiver errado",
+                "nl": "eerste adapter implementatie\nenquête architectuur\ndynamische jail detectie\njail parameter controle\nfout herstellen als de server fout is",
+                "fr": "mise en œuvre initiale de l'adaptateur\narchitecture des sondages\ndétection dynamique des prisons\ncontrôle des paramètres de prison\ncorrection de l'erreur si le serveur se trompe",
+                "it": "iniziale implementazione dell'adattatore\narchitettura inquinante\nrilevamento dinamico della prigione\ncontrollo dei parametri\nerrore di correzione se il server è sbagliato",
+                "es": "aplicación inicial del adaptador\npolinización de arquitectura\ndetección dinámica de la cárcel\ncontrol del parámetro carcelario\ncorregir error si el servidor está equivocado",
+                "pl": "wstępna implementacja adaptera\narchitektura sondażowa\ndynamiczna detekcja więzienia\nkontrola parametrów więzienia\nnaprawić błąd, jeśli serwer się myli",
+                "uk": "впровадження початкових адаптерів\nархітектура опитування\nдинамічне виявлення в’язнів\nконтроль параметрів в'язниці\nвиправлено помилку, якщо сервер неправильно",
+                "zh-cn": "初始适配器执行\n投票结构\n动态监狱检测\n监狱参数控制\n如果服务器错误, 则修正错误"
+            }
+        },
+        "titleLang": {
+            "en": "fail2ban control",
+            "de": "fail2ban-Steuerung",
+            "ru": "контроль фейл2бана",
+            "pt": "controle fail2ban",
+            "nl": "fail2ban-controle",
+            "fr": "contrôle fail2ban",
+            "it": "controllo fail2ban",
+            "es": "control de fail2ban",
+            "pl": "Kontrola Fail2ban",
+            "uk": "контроль fail2ban",
+            "zh-cn": "故障2禁止控制"
+        },
+        "desc": {
+            "en": "fail2bancontrol",
+            "de": "fail2bancontrol",
+            "ru": "фейл2банконтроль",
+            "pt": "fail2bancontrol",
+            "nl": "fail2bancontrole",
+            "fr": "échec2bancontrol",
+            "it": "fail2bancontrol",
+            "es": "controlfail2ban",
+            "pl": "kontrola awarii2banowania",
+            "uk": "fail2bancontrol",
+            "zh-cn": "失败2禁止控制"
+        },
+        "authors": ["oweitman <oweitman@gmx.de>"],
+        "keywords": ["template", "automation", "IoT", "integration"],
+        "licenseInformation": {
+            "type": "free",
+            "license": "MIT"
+        },
+        "platform": "Javascript/Node.js",
+        "icon": "fail2bancontrol.png",
+        "enabled": true,
+        "extIcon": "https://raw.githubusercontent.com/oweitman/ioBroker.fail2bancontrol/main/admin/fail2bancontrol.png",
+        "readme": "https://github.com/oweitman/ioBroker.fail2bancontrol/blob/main/README.md",
+        "loglevel": "info",
+        "tier": 3,
+        "mode": "daemon",
+        "type": "utility",
+        "compact": true,
+        "connectionType": "local",
+        "dataSource": "poll",
+        "adminUI": {
+            "config": "json"
+        },
+        "dependencies": [
+            {
+                "js-controller": ">=6.0.11"
+            }
+        ],
+        "globalDependencies": [
+            {
+                "admin": ">=7.6.17"
+            }
+        ]
     },
-    "titleLang": {
-      "en": "fail2ban control",
-      "de": "fail2ban-Steuerung",
-      "ru": "контроль фейл2бана",
-      "pt": "controle fail2ban",
-      "nl": "fail2ban-controle",
-      "fr": "contrôle fail2ban",
-      "it": "controllo fail2ban",
-      "es": "control de fail2ban",
-      "pl": "Kontrola Fail2ban",
-      "uk": "контроль fail2ban",
-      "zh-cn": "故障2禁止控制"
+    "native": {
+        "address": "http://127.0.0.1:9191",
+        "refreshOverview": 30,
+        "refreshJails": 60,
+        "refreshBanned": 60,
+        "requestTimeout": 10000
     },
-    "desc": {
-      "en": "fail2bancontrol",
-      "de": "fail2bancontrol",
-      "ru": "фейл2банконтроль",
-      "pt": "fail2bancontrol",
-      "nl": "fail2bancontrole",
-      "fr": "échec2bancontrol",
-      "it": "fail2bancontrol",
-      "es": "controlfail2ban",
-      "pl": "kontrola awarii2banowania",
-      "uk": "fail2bancontrol",
-      "zh-cn": "失败2禁止控制"
-    },
-    "authors": [
-      "oweitman <oweitman@gmx.de>"
-    ],
-    "keywords": [
-      "template",
-      "automation",
-      "IoT",
-      "integration"
-    ],
-    "licenseInformation": {
-      "type": "free",
-      "license": "MIT"
-    },
-    "platform": "Javascript/Node.js",
-    "icon": "fail2bancontrol.png",
-    "enabled": true,
-    "extIcon": "https://raw.githubusercontent.com/oweitman/ioBroker.fail2bancontrol/main/admin/fail2bancontrol.png",
-    "readme": "https://github.com/oweitman/ioBroker.fail2bancontrol/blob/main/README.md",
-    "loglevel": "info",
-    "tier": 3,
-    "mode": "daemon",
-    "type": "utility",
-    "compact": true,
-    "connectionType": "local",
-    "dataSource": "poll",
-    "adminUI": {
-      "config": "json"
-    },
-    "dependencies": [
-      {
-        "js-controller": ">=6.0.11"
-      }
-    ],
-    "globalDependencies": [
-      {
-        "admin": ">=7.0.23"
-      }
+    "objects": [],
+    "instanceObjects": [
+        {
+            "_id": "info",
+            "type": "channel",
+            "common": {
+                "name": "Information"
+            },
+            "native": {}
+        },
+        {
+            "_id": "info.connection",
+            "type": "state",
+            "common": {
+                "role": "indicator.connected",
+                "name": "Device or service connected",
+                "type": "boolean",
+                "read": true,
+                "write": false,
+                "def": false
+            },
+            "native": {}
+        }
     ]
-  },
-  "native": {
-    "address": "http://127.0.0.1:9191",
-    "refreshOverview": 30,
-    "refreshJails": 60,
-    "refreshBanned": 60,
-    "requestTimeout": 10000
-  },
-  "objects": [],
-  "instanceObjects": [
-    {
-      "_id": "info",
-      "type": "channel",
-      "common": {
-        "name": "Information"
-      },
-      "native": {}
-    },
-    {
-      "_id": "info.connection",
-      "type": "state",
-      "common": {
-        "role": "indicator.connected",
-        "name": "Device or service connected",
-        "type": "boolean",
-        "read": true,
-        "write": false,
-        "def": false
-      },
-      "native": {}
-    }
-  ]
 }
