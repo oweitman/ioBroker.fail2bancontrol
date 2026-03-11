@@ -1,5 +1,15 @@
 {
+    "address": "地址",
+    "address_help": "fail2ban-control API 的基本 URL，例如http://127.0.0.1:9191",
     "fail2bancontrol adapter settings": "fail2bancontrol的适配器设置",
     "option1": "选项1",
-    "option2": "选项2"
+    "option2": "选项2",
+    "refreshBanned": "禁止刷新（秒）",
+    "refreshBanned_help": "禁止IP信息的轮询间隔",
+    "refreshJails": "刷新监狱（秒）",
+    "refreshJails_help": "监狱数据的轮询间隔",
+    "refreshOverview": "刷新概览（秒）",
+    "refreshOverview_help": "服务器概览数据的轮询间隔",
+    "requestTimeout": "请求超时（毫秒）",
+    "requestTimeout_help": "对fail2ban-control 的 API 请求超时"
 }

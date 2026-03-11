@@ -10,7 +10,6 @@
   "homepage": "https://github.com/oweitman/ioBroker.fail2bancontrol",
   "license": "MIT",
   "keywords": [
-    "iobroker",
     "fail2ban",
     "fail2ban-control",
     "security",

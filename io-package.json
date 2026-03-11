@@ -44,9 +44,21 @@
             "zh-cn": "故障2禁止控制"
         },
         "desc": {
-            "en": "ioBroker adapter to monitor and control fail2ban servers using the fail2ban-control API."
+            "en": "ioBroker adapter to monitor and control fail2ban servers using the fail2ban-control API.",
+            "de": "ioBroker-Adapter zur Überwachung und Steuerung von fail2ban-Servern mithilfe der fail2ban-control-API.",
+            "ru": "Адаптер ioBroker для мониторинга и управления серверами Fail2ban с помощью API-интерфейса Fail2ban-Control.",
+            "pt": "Adaptador ioBroker para monitorar e controlar servidores fail2ban usando a API fail2ban-control.",
+            "nl": "ioBroker-adapter voor het bewaken en besturen van fail2ban-servers met behulp van de fail2ban-control API.",
+            "fr": "Adaptateur ioBroker pour surveiller et contrôler les serveurs fail2ban à l'aide de l'API fail2ban-control.",
+            "it": "Adattatore ioBroker per monitorare e controllare i server fail2ban utilizzando l'API fail2ban-control.",
+            "es": "Adaptador ioBroker para monitorear y controlar servidores fail2ban usando la API fail2ban-control.",
+            "pl": "Adapter ioBroker do monitorowania i kontrolowania serwerów Fail2ban za pomocą API Fail2ban-Control.",
+            "uk": "Адаптер ioBroker для моніторингу та керування серверами fail2ban за допомогою API fail2ban-control.",
+            "zh-cn": "ioBroker 适配器，用于使用fail2ban-control API 监视和控制fail2ban 服务器。"
         },
-        "authors": ["oweitman <oweitman@gmx.de>"],
+        "authors": [
+            "oweitman <oweitman@gmx.de>"
+        ],
         "keywords": [
             "fail2ban",
             "fail2ban-control",

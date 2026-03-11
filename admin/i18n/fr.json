@@ -1,5 +1,15 @@
 {
+    "address": "Adresse",
+    "address_help": "URL de base de l'API fail2ban-control, par ex. http://127.0.0.1:9191",
     "fail2bancontrol adapter settings": "Paramètres d'adaptateur pour fail2bancontrol",
     "option1": "option1",
-    "option2": "option2"
+    "option2": "option2",
+    "refreshBanned": "Actualisation interdite (secondes)",
+    "refreshBanned_help": "Intervalle d'interrogation pour les informations IP interdites",
+    "refreshJails": "Actualiser les prisons (secondes)",
+    "refreshJails_help": "Intervalle d'interrogation pour les données de prison",
+    "refreshOverview": "Actualiser l'aperçu (secondes)",
+    "refreshOverview_help": "Intervalle d'interrogation pour les données de présentation du serveur",
+    "requestTimeout": "Délai d'expiration de la demande (millisecondes)",
+    "requestTimeout_help": "Délai d'expiration des requêtes API vers fail2ban-control"
 }

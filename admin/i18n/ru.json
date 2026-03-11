@@ -1,5 +1,15 @@
 {
+    "address": "Адрес",
+    "address_help": "Базовый URL API-интерфейса Fail2ban-Control, например. http://127.0.0.1:9191",
     "fail2bancontrol adapter settings": "Настройки адаптера для fail2bancontrol",
     "option1": "вариант 1",
-    "option2": "вариант 2"
+    "option2": "вариант 2",
+    "refreshBanned": "Обновить запрет (в секундах)",
+    "refreshBanned_help": "Интервал опроса информации о запрещенных IP-адресах",
+    "refreshJails": "Обновить джейлы (секунды)",
+    "refreshJails_help": "Интервал опроса данных тюрьмы",
+    "refreshOverview": "Обновить обзор (секунды)",
+    "refreshOverview_help": "Интервал опроса данных обзора сервера",
+    "requestTimeout": "Тайм-аут запроса (миллисекунды)",
+    "requestTimeout_help": "Таймаут для запросов API к Fail2ban-контролю"
 }

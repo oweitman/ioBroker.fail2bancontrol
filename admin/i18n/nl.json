@@ -1,5 +1,15 @@
 {
+    "address": "Adres",
+    "address_help": "Basis-URL van de fail2ban-control API, b.v. http://127.0.0.1:9191",
     "fail2bancontrol adapter settings": "Adapterinstellingen voor fail2bancontrol",
     "option1": "optie1",
-    "option2": "optie2"
+    "option2": "optie2",
+    "refreshBanned": "Vernieuwen verboden (seconden)",
+    "refreshBanned_help": "Polling-interval voor verboden IP-informatie",
+    "refreshJails": "Gevangenissen vernieuwen (seconden)",
+    "refreshJails_help": "Polling-interval voor gevangenisgegevens",
+    "refreshOverview": "Overzicht vernieuwen (seconden)",
+    "refreshOverview_help": "Polling-interval voor serveroverzichtsgegevens",
+    "requestTimeout": "Time-out aanvragen (milliseconden)",
+    "requestTimeout_help": "Time-out voor API-verzoeken aan fail2ban-control"
 }

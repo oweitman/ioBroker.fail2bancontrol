@@ -1,5 +1,15 @@
 {
+    "address": "Адреса",
+    "address_help": "Базова URL-адреса API fail2ban-control, напр. http://127.0.0.1:9191",
     "fail2bancontrol adapter settings": "Налаштування адаптера для fail2bancontrol",
     "option1": "варіант1",
-    "option2": "варіант2"
+    "option2": "варіант2",
+    "refreshBanned": "Оновлення заборонено (секунди)",
+    "refreshBanned_help": "Інтервал опитування щодо інформації про заборонену IP-адресу",
+    "refreshJails": "Оновити в'язниці (секунди)",
+    "refreshJails_help": "Інтервал опитування для даних в'язниці",
+    "refreshOverview": "Оновити огляд (секунди)",
+    "refreshOverview_help": "Інтервал опитування для даних огляду сервера",
+    "requestTimeout": "Час очікування запиту (мілісекунди)",
+    "requestTimeout_help": "Тайм-аут для запитів API до fail2ban-control"
 }
