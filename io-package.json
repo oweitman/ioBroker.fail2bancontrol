@@ -44,20 +44,22 @@
             "zh-cn": "故障2禁止控制"
         },
         "desc": {
-            "en": "fail2bancontrol",
-            "de": "fail2bancontrol",
-            "ru": "фейл2банконтроль",
-            "pt": "fail2bancontrol",
-            "nl": "fail2bancontrole",
-            "fr": "échec2bancontrol",
-            "it": "fail2bancontrol",
-            "es": "controlfail2ban",
-            "pl": "kontrola awarii2banowania",
-            "uk": "fail2bancontrol",
-            "zh-cn": "失败2禁止控制"
+            "en": "ioBroker adapter to monitor and control fail2ban servers using the fail2ban-control API."
         },
         "authors": ["oweitman <oweitman@gmx.de>"],
-        "keywords": ["template", "automation", "IoT", "integration"],
+        "keywords": [
+            "fail2ban",
+            "fail2ban-control",
+            "security",
+            "intrusion-prevention",
+            "ip-ban",
+            "server-security",
+            "linux-security",
+            "jail-management",
+            "monitoring",
+            "automation",
+            "home-automation"
+        ],
         "licenseInformation": {
             "type": "free",
             "license": "MIT"

@@ -1,7 +1,7 @@
 {
   "name": "iobroker.fail2bancontrol",
   "version": "0.4.2",
-  "description": "fail2bancontrol",
+  "description": "ioBroker adapter to monitor and control fail2ban servers using the fail2ban-control API.",
   "author": {
     "name": "oweitman",
     "email": "oweitman@gmx.de"
@@ -10,10 +10,18 @@
   "homepage": "https://github.com/oweitman/ioBroker.fail2bancontrol",
   "license": "MIT",
   "keywords": [
-    "template",
+    "iobroker",
+    "fail2ban",
+    "fail2ban-control",
+    "security",
+    "intrusion-prevention",
+    "ip-ban",
+    "server-security",
+    "linux-security",
+    "jail-management",
+    "monitoring",
     "automation",
-    "IoT",
-    "integration"
+    "home-automation"
   ],
   "repository": {
     "type": "git",
